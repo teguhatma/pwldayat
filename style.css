@@ -1,30 +1,31 @@
 /* Font import */
 @import url('https://fonts.googleapis.com/css?family=Fredoka+One|Raleway&display=swap');
 
-body{
+body {
     background: #fff;
     font-family: 'Raleway', sans-serif;
 }
-.title-banner{
+
+.title-banner {
     font-weight: bold;
     letter-spacing: 7px;
 }
 
 
 /* Start Gradient animation for cards-person */
-.cards-person{
-    background: rgba(240,240,240,1);
-    background: -moz-linear-gradient(-45deg, rgba(240,240,240,1) 0%, rgba(240,240,240,1) 52%, rgba(150,145,150,1) 100%);
-    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(240,240,240,1)), color-stop(52%, rgba(240,240,240,1)), color-stop(100%, rgba(150,145,150,1)));
-    background: -webkit-linear-gradient(-45deg, rgba(240,240,240,1) 0%, rgba(240,240,240,1) 52%, rgba(150,145,150,1) 100%);
-    background: -o-linear-gradient(-45deg, rgba(240,240,240,1) 0%, rgba(240,240,240,1) 52%, rgba(150,145,150,1) 100%);
-    background: -ms-linear-gradient(-45deg, rgba(240,240,240,1) 0%, rgba(240,240,240,1) 52%, rgba(150,145,150,1) 100%);
-    background: linear-gradient(135deg, rgba(240,240,240,1) 0%, rgba(240,240,240,1) 52%, rgba(150,145,150,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f0f0', endColorstr='#969196', GradientType=1 );
+.cards-person {
+    background: rgba(240, 240, 240, 1);
+    background: -moz-linear-gradient(-45deg, rgba(240, 240, 240, 1) 0%, rgba(240, 240, 240, 1) 52%, rgba(150, 145, 150, 1) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(240, 240, 240, 1)), color-stop(52%, rgba(240, 240, 240, 1)), color-stop(100%, rgba(150, 145, 150, 1)));
+    background: -webkit-linear-gradient(-45deg, rgba(240, 240, 240, 1) 0%, rgba(240, 240, 240, 1) 52%, rgba(150, 145, 150, 1) 100%);
+    background: -o-linear-gradient(-45deg, rgba(240, 240, 240, 1) 0%, rgba(240, 240, 240, 1) 52%, rgba(150, 145, 150, 1) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(240, 240, 240, 1) 0%, rgba(240, 240, 240, 1) 52%, rgba(150, 145, 150, 1) 100%);
+    background: linear-gradient(135deg, rgba(240, 240, 240, 1) 0%, rgba(240, 240, 240, 1) 52%, rgba(150, 145, 150, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f0f0f0', endColorstr='#969196', GradientType=1);
 }
 
 
-.description{
+.description {
     margin-top: 15px;
     border-left: 2px solid;
     padding-left: 10px;
@@ -33,13 +34,15 @@ body{
     text-align: justify;
     margin: 5px 20px 10px 20px;
 }
-.jobs-description{
+
+.jobs-description {
     color: #adb5bd;
     font-size: 12px;
     padding: 0 20px 20px 20px;
     font-family: 'Relaway', sans-serif;
 }
-.profile-images{
+
+.profile-images {
     background-size: cover;
     width: 100%;
     padding: 8px;
@@ -47,118 +50,152 @@ body{
     border-radius: 0;
 }
 
-.card{
+.card {
     border: none;
     border-radius: 0;
 }
 
-.card-title{
+.card-title {
     text-transform: uppercase;
     padding: 5px 20px 0 20px;
     font-family: 'Fredoka One', cursive;
 }
-.card-body{
+
+.card-body {
     padding: 0;
 }
 
-.facebook{
+.facebook {
     width: 35px;
     transition: width .2s;
 }
-.instagram{
+
+.instagram {
     width: 35px;
     transition: width .2s;
 }
-.gmail{
+
+.gmail {
     width: 35px;
     transition: width .2s;
 }
-.pinterest{
+
+.pinterest {
     width: 35px;
     transition: width .2s;
 }
-.sosmed{
+
+.sosmed {
     background: #353b48;
 }
-.instagram:hover{
-    width: 45px;
-}
-.facebook:hover{
-    width: 45px;
-}
-.pinterest:hover{
-    width: 45px;
-}
-.gmail:hover{
+
+.instagram:hover {
     width: 45px;
 }
 
-.icons{
+.facebook:hover {
+    width: 45px;
+}
+
+.pinterest:hover {
+    width: 45px;
+}
+
+.gmail:hover {
+    width: 45px;
+}
+
+.icons {
     width: 30px;
 }
-.profile-text{
+
+.profile-text {
     margin-bottom: 0;
 }
-.icon-gambar{
+
+.icon-gambar {
     width: 80%;
 }
 
-.background-profile{
+.background-profile {
     background: url(images/background-profile.jpg) no-repeat;
     background-size: 100%;
 }
 
-.comment{
+.comment {
     display: block;
 }
-.fa-comment{
+
+.fa-comment {
     margin-bottom: 3px;
     margin-top: 3px;
 }
-.img-map{
+
+.img-map {
     width: 100%;
     border: 2px solid #dee2e6;
     height: 250px;
     background-size: cover;
 }
 
-.title-contact{
+.title-contact {
     font-size: 14px;
     letter-spacing: 1px;
 }
-.title-jawab{
+
+.title-jawab {
     font-size: 17px;
 }
 
-.question{
+/* Untuk question chat */
+.question {
     position: fixed;
     width: 300px;
     bottom: 0;
     right: 0;
     margin-right: 230px;
 }
-.question-body{
+
+.question-body {
     height: 300px;
     background: #f8f9fa;
     border: 1px solid #adb5bd;
 }
-.input-text-here{
+
+.input-text-here {
     border-radius: 0;
 }
 
-.question-header{
+.question-header {
     border: 1px solid #adb5bd;
 }
-.text-recent{
+
+.text-recent {
     height: 258px;
 }
+
 @media only screen and (max-width: 600px) {
-    .question{
+    .question {
         margin-right: 20px;
     }
-  }
-@media only screen and (max-width: 768px){
-    .question{
+}
+
+@media only screen and (max-width: 768px) {
+    .question {
         margin-right: 40px;
     }
 }
+
+.text-hello {
+    background: #17a2b8;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 10px;
+}
+
+.text-hello p {
+    font-size: 13px;
+}
+
+/* End chat box */
