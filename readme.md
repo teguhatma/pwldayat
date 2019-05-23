@@ -5,5 +5,5 @@
 
 
 
-## harus connect internet
-## di sesuaikan aja style / apa saja sesuai keinginan tinggal di lihat di class html dan dicocokkan di style.css
+#### harus connect internet -> karna make CDN Semua
+_* di sesuaikan aja style / apa saja sesuai keinginan tinggal di lihat di class html dan dicocokkan di style.css
