@@ -149,3 +149,16 @@ body{
 .question-header{
     border: 1px solid #adb5bd;
 }
+.text-recent{
+    height: 258px;
+}
+@media only screen and (max-width: 600px) {
+    .question{
+        margin-right: 20px;
+    }
+  }
+@media only screen and (max-width: 768px){
+    .question{
+        margin-right: 40px;
+    }
+}
