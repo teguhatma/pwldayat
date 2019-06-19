@@ -6,11 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Profile</title>
-
-    <!-- bootstrap CDN for CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
     <!-- Custom style -->
     <link rel="stylesheet" href="style.css">
 
@@ -23,9 +18,9 @@
 
     <div class="container-fluid py-5 background-profile">
 
-        <div class="container py-5">
+        <div class="container py-5 profile-depan">
             <div class="text-center">
-                <h2 class="title-banner">Profile</h2>
+                <h2 class="title-banner-profile">Profile</h2>
                 <span class="text-muted">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto, tempora,
                     voluptates provident quasi nostrum, asperiores aliquam enim voluptatibus voluptate non quas
                     perspiciatis quam in consectetur suscipit vel facilis magni minus!</span>
@@ -34,17 +29,17 @@
 
     </div>
 
-    <div class="container-fluid py-5">
+    <div class="container-fluid profile-kelebihan py-5">
 
         <div class="container">
-            <div class="row my-5">
+            <div class="row row-profile my-5">
                 <div class="col-md-6 my-4 profile">
                     <div class="icon-profile">
                         <img src="images/data1.png" class="icon-gambar img-responsive" alt="">
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="profile-description py-5">
+                <div class="col-md-6 profile-description">
+                    <div class="py-5">
                         <h3>Responsive Website</h3>
                         <p class="profile-text">Memberikan kenyamanan menjelahi dari berbagai platform sehingga mudah
                             disesuaikan di mobile,
@@ -59,9 +54,9 @@
                 </div>
             </div>
 
-            <div class="row my-5">
-                <div class="col-md-6">
-                    <div class="profile-description py-5">
+            <div class="row row-profile my-5">
+                <div class="col-md-6 profile-description">
+                    <div class="py-5">
                         <h3>Best Security</h3>
                         <p>Keamanan untuk menjaga sistem anda tetap terjaga dari berbagai ancaman sehingga benar-benar
                             terjaga sepenuhnya.</p>
@@ -75,14 +70,14 @@
                 </div>
             </div>
 
-            <div class="row my-5">
+            <div class="row row-profile my-5">
                 <div class="col-md-6 my-4 profile">
                     <div class="icon-profile">
                         <img src="images/chart.jpeg" class="icon-gambar img-responsive" alt="">
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="profile-description py-5">
+                <div class="col-md-6 profile-description">
+                    <div class="py-5">
                         <h3>Best Users And Always Grow up</h3>
                         <p>Penggunaan terbanyak dan selalu digunakan untuk meningkatkan produk.</p>
                         <a href="#" class="btn btn-danger btn-large">Want know more!</a>
@@ -95,48 +90,34 @@
     </div>
 
     <!-- Untuk Chat di bagian bawah  -->
-    <div class="container">
-        <div id="accordion">
-            <div class="card question">
-                <button class="card-header question-header" data-toggle="collapse" href="#collapseOne">
-                    <a class="card-link">
-                        Have a question?
-                    </a>
-                </button>
-                <div id="collapseOne" class="collapse" data-parent="#accordion">
-                    <div class="card-body question-body">
-                        <div class="input-group">
-                            <div class="text-recent px-2">
-                                <div class="text-hello mx-1 py-2 px-3">
-                                    <p class="my-0">Hello there?</p>
-                                    <p class="my-0">Ask me if u have question</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="input-group">
-                            <input type="text" class="form-control input-text-here" id="text"
-                                placeholder="Message here ...">
-                            <div class="input-group-prepend">
-                                <div class="input-group-text"><i class="fas fa-share"></i></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <div class="chat">
+        <div class="collapsible">Have a question?</div>
+        <div class="content">
+            <div class="chat-message">
+                <input type="text" class="form-control-chat" placeholder="Type message here ...">
+                <button class="chat-button">Send</button>
             </div>
         </div>
     </div>
     <!-- End chat -->
 
-    <!-- bootstrap CDN for JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        }
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
+
 
 </body>
 

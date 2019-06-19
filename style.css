@@ -4,6 +4,9 @@
 body {
     background: #fff;
     font-family: 'Raleway', sans-serif;
+    margin: 0;
+    font-weight: 400;
+    line-height: 1.5;
 }
 
 .title-banner {
@@ -13,6 +16,9 @@ body {
 
 
 /* Start Gradient animation for cards-person */
+.card-persons{
+    margin: 50px 200px 50px 200px;
+}
 .cards-person {
     background: rgba(240, 240, 240, 1);
     background: -moz-linear-gradient(-45deg, rgba(240, 240, 240, 1) 0%, rgba(240, 240, 240, 1) 52%, rgba(150, 145, 150, 1) 100%);
@@ -36,16 +42,14 @@ body {
 }
 
 .jobs-description {
-    color: #adb5bd;
+    color: #4c76be;
     font-size: 12px;
-    padding: 0 20px 20px 20px;
     font-family: 'Relaway', sans-serif;
 }
 
 .profile-images {
     background-size: cover;
     width: 100%;
-    padding: 8px;
     height: 290px;
     border-radius: 0;
 }
@@ -53,15 +57,25 @@ body {
 .card {
     border: none;
     border-radius: 0;
+    width: 280px;
+}
+
+.about-card{
+    display: flex;
+    justify-content: space-between;
 }
 
 .card-title {
+    letter-spacing: 2px;
+    padding: 0 20px 0 20px;
+    font-size: 16px;
+    margin: 0;
     text-transform: uppercase;
-    padding: 5px 20px 0 20px;
     font-family: 'Fredoka One', cursive;
 }
 
 .card-body {
+    text-align: center;
     padding: 0;
 }
 
@@ -87,22 +101,34 @@ body {
 
 .sosmed {
     background: #353b48;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    border-radius: 10px;
 }
 
 .instagram:hover {
-    width: 45px;
+    width: 38px;
 }
 
 .facebook:hover {
-    width: 45px;
+    width: 38px;
+}
+.link-sosmed{
+    margin: 10px 10px 8px 10px;
 }
 
 .pinterest:hover {
-    width: 45px;
+    width: 38px;
 }
 
 .gmail:hover {
-    width: 45px;
+    width: 38px;
+}
+
+.dayat{
+    background: #fff;
+    padding: 10px;
 }
 
 .icons {
@@ -199,3 +225,232 @@ body {
 }
 
 /* End chat box */
+
+.container-fluid.my-team-header{
+    text-align: center;
+    padding: 50px 200px 50px 200px;
+}
+
+@media only screen and (max-width: 1368px) {
+    .card{
+        width: 200px;
+    }
+    .profile-images{
+        background-size: cover;
+        width: 100%;
+        height: 220px;
+    }
+    .dayat{
+        margin: 50px 0 50px 0;
+    }
+    .card-title{
+        letter-spacing: 2px;
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+    .jobs-description{
+        color: #4c76be;
+        font-size: 11px;
+    }
+    .description{
+        margin: 15px 0 20px 0;
+        border-left: 1px solid;
+        color: #000;
+        font-size: 12px;
+        text-align: start;
+    }
+    .sosmed{
+        margin: 0;
+        background: #353b48;
+        display: flex;
+        justify-content: center;
+        border-radius: 10px;
+    }
+    img.instagram{
+        width: 30px;
+    }
+    img.facebook{
+        width: 30px;
+    }
+    img.gmail{
+        width: 30px;
+    }
+    img.pinterest{
+        width: 30px;
+    }
+    .title-banner-profile{
+        margin: 0 0 5px 0;
+        font-weight: bold;
+        letter-spacing: 7px;
+        font-size: 2rem;
+    }
+    .profile-depan{
+        padding: 100px 200px 100px 200px;
+        text-align: center;
+    }
+    .text-muted{
+        color: #6c757d!important;
+    }
+    .profile-kelebihan{
+        padding: 48px 15px 48px 15px;
+    }
+    .profile{
+        width: 1000px;
+        text-align: center;
+    }
+    .row-profile{
+        margin: 100px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .profile-description{
+        width: 1000px;
+    }
+    h3{
+        font-size: 1.75rem;
+        margin-bottom: .5rem;
+        font-weight: 500;
+        line-height: 1.2;
+    }
+    .icons-profile{
+        margin: 20px 0 20px 0;
+    }
+    .btn-danger{
+        color: #fff;
+        padding: .375rem .75rem;
+        background-color: #dc3545;
+        border-color: #dc3545;
+        font-weight: 400;
+        display: inline-block;
+        text-align: center;
+        vertical-align: middle;
+        user-select: none;
+        border: 1px solid transparent;
+        border-radius: .25rem;
+        /* transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out; */
+    }
+    a{
+        text-decoration: none;
+    }
+    .container-about{
+        margin: 0 150px 0 150px;
+    }
+    .input-group{
+        display: flex;
+        justify-content: start;
+    }
+    .bagian-about{
+        width: 420px;
+    }
+    .input-group-text{
+        align-items: center;
+        padding: .375rem .75rem;
+        margin-bottom: 0;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #fff;
+        white-space: nowrap;
+        border-radius: .25rem 0 0 .25rem;
+        background-color: #e9ecef;
+        border: 1px solid #ced4da;
+    }
+    .fas{
+        color: #495057;
+    }
+    .form-control{
+        position: relative;
+        flex: 1 1 auto;
+        width: 1%;
+        display: block;
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #495057;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        border-radius: 0 .25rem .25rem 0;
+        font-family: 'Raleway', sans-serif;
+        
+    }
+    .username, .email, .phone{
+        margin: 0 0 50px 0;
+    }
+    .contact-justify{
+        display: flex;
+        justify-content: space-between;
+    }
+    .title-contact, .title-jawab{
+        margin: 0 0 5px 0;
+        font-weight: normal;
+    }
+    .info-map{
+        margin-top: 10px;
+    }
+    .btn-primary{
+        color: #fff;
+        padding: .375rem 2.5rem;
+        background-color: #007bff;
+        border-color: #007bff;
+        font-weight: 400;
+        display: inline-block;
+        text-align: center;
+        vertical-align: middle;
+        user-select: none;
+        border: 1px solid transparent;
+        border-radius: .25rem;
+        float: right!important;
+        /* transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out; */
+    }
+    .textarea{
+        margin-bottom: 20px;
+    }
+
+    .chat{
+        bottom: 0;
+        right: 0;
+        position: fixed;
+        width: 300px;
+        margin-right: 100px;
+        border: 1px solid #adb5bd;
+    }
+
+    .collapsible {
+        background-color: #5efbbb;
+        color: #444;
+        cursor: pointer;
+        padding: 10px;
+        border: none;
+        text-align: center;
+        outline: none;
+        font-size: 15px;
+        display: block;
+      }
+      
+      /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+      .active, .collapsible:hover {
+        background-color: #5efbbb;
+      }
+      
+      /* Style the collapsible content. Note: hidden by default */
+      .content {
+        height: 250px;
+        display: none;
+        overflow: hidden;
+        background-color: #f1f1f1;
+      }
+      .form-control-chat{
+          width: 100%;
+          padding: 10px;
+      }
+      .chat-message{
+          display: flex;
+          justify-content: start;
+          margin-top: 212px;
+      }
+      .chat-button{
+          padding: 0 15px;
+      }
+}
